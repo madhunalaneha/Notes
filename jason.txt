@@ -1,0 +1,39 @@
+jason stands forJavaScript Object Notation
+used for data representation format
+         for APIs and configs
+         lightweight and easy to read/write
+         integrates easily with most languages
+jason types
+    strings
+    numbers
+    booleans
+    null
+    arrays
+    arrays
+    objects
+extension:.jason
+examples:
+      user.jason 
+      {
+      "name"(quotes mmust be used for every key):"neha"(quotes only cause it is a string),
+      "Age":20,
+      "hobbies":["reading","drawing"]
+      }
+  companies.jason
+      [                                             -All objects enclosed 
+      {                                             -object start
+      "name":"big corporation "
+      "numberofemployees":10000,
+      "ceo":"mary"
+      "rating":3.5
+      },                                            -object ending
+      {
+      "name":"small stratup",
+      "numberof employees":3,
+      "ceo":null,
+      "rating":4.3
+      }
+      ]
+#to parse jason to javascript we use JSON.parse
+1.console.log(JSON.parse(companies))
+2.console.log(JSON.parse((companies)[1].name)
